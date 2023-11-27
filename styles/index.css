@@ -1,0 +1,135 @@
+/* Resetting default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Albert Sans', sans-serif;
+    background-color: #e6c0d3cc;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3%;
+    background-color: #F8D9D9;
+    color: black;
+}
+
+header .webname {
+    margin-left: 3%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.split-layout {
+    display: flex;
+    width: 100%;
+}
+
+.left-side {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("assets/bg.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side .logo-container {
+    position: relative;
+    width: 45%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 4);
+}
+
+.left-side img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.right-side {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    background-color: #F8D9D9; /* Matching the header color */
+}
+
+.right-side h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px; /* Larger font size */
+}
+
+.right-side .welcome-text {
+    text-align: center;
+    max-width: 80%;
+    font-size: 20px; /* Bigger welcome text */
+    margin-bottom: 2%; /* Margin between welcome text and remaining text */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 2%; /* Margin between buttons and text above it */
+}
+
+.buttons a {
+    text-decoration: none;
+    color: black;
+    background-color: #F8D9D9;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #58413b;
+    color: white;
+    text-align: left;
+    padding: 20px 3%;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #58413b;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F8D9D9;
+}
